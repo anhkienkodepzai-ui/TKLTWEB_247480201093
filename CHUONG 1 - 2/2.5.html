@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng ký dự thi thể thao</title>
+  </head>
+
+  <body>
+    <table border="1" width="700" align="center">
+      <!-- THANH TIÊU ĐỀ -->
+      <tr>
+        <td bgcolor="#D3D3D3">
+          <b>Đăng ký dự thi</b>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <!-- PHẦN ĐẦU -->
+          <table width="100%">
+            <tr>
+              <td width="50%">
+                <b>TRƯỜNG ĐẠI HỌC BẠC LIÊU</b><br />
+                KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+              </td>
+
+              <td align="center">
+                <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b><br />
+                Độc lập - Tự do - Hạnh phúc
+              </td>
+            </tr>
+          </table>
+
+          <!-- TIÊU ĐỀ -->
+          <center>
+            <font face="Verdana" size="5">
+              <b>PHIẾU ĐĂNG KÝ DỰ THI THỂ THAO</b>
+            </font>
+          </center>
+
+          <br />
+
+          <!-- FORM -->
+          <form>
+            <table>
+              <!-- LOGO -->
+              <tr>
+                <td>
+                  <img src="1.png" width="100" />
+                </td>
+
+                <td>
+                  Họ tên:
+                  <input type="text" name="hoten" />
+                  <br /><br />
+
+                  Mật khẩu:
+                  <input type="password" name="matkhau" />
+                </td>
+              </tr>
+
+              <!-- MÔN THỂ THAO -->
+              <tr>
+                <td colspan="2">
+                  <b>Môn thể thao:</b>
+                  <br />
+
+                  <input type="checkbox" name="bongda" />
+                  Bóng đá
+                  <br />
+
+                  <input type="checkbox" name="bongchuyen" />
+                  Bóng chuyền
+                  <br />
+
+                  <input type="checkbox" name="dienkinh" />
+                  Điền kinh
+                  <br />
+
+                  <input type="checkbox" name="boiloi" />
+                  Bơi lội
+                </td>
+              </tr>
+            </table>
+
+            <hr />
+
+            <!-- PHẦN CỨNG -->
+            <center>
+              <font face="Verdana" size="4">
+                <b>PHẦN CỨNG MÁY TÍNH</b>
+              </font>
+            </center>
+
+            <br />
+
+            <b>Thiết bị:</b>
+
+            <select name="thietbi" size="4">
+              <option>CPU</option>
+              <option>Mainboard</option>
+              <option>ASUS DVD</option>
+              <option>RAMKingMax</option>
+            </select>
+
+            <br /><br />
+
+            <b>Thời gian bảo hành:</b>
+
+            <select name="baohanh">
+              <option>6 tháng</option>
+              <option>1 năm</option>
+              <option>2 năm</option>
+              <option>3 năm</option>
+            </select>
+
+            <br /><br />
+
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
