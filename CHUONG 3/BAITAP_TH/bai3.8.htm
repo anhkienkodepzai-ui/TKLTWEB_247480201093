@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài tập 3.8</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+      }
+
+      .menu {
+        width: 800px;
+        margin: 30px auto;
+        background-color: #333;
+        list-style: none;
+        display: flex;
+      }
+
+      .menu > li {
+        position: relative;
+      }
+
+      .menu > li > a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 20px;
+      }
+
+      .menu > li > a:hover {
+        background-color: #555;
+      }
+
+      /* Menu con */
+      .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 270px;
+        background-color: #444;
+        list-style: none;
+      }
+
+      /* Hiện menu con khi rê chuột */
+      .dropdown:hover .submenu {
+        display: block;
+      }
+
+      .submenu li {
+        position: relative;
+      }
+
+      .submenu li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #666;
+      }
+
+      .submenu li a:hover {
+        background-color: #666;
+      }
+
+      /* Menu cấp 2 bên phải */
+      .submenu-right {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 250px;
+        background-color: #555;
+        list-style: none;
+      }
+
+      /* Hiện menu cấp 2 */
+      .submenu li:hover .submenu-right {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="menu">
+      <li>
+        <a href="trangchu.htm">Trang chủ</a>
+      </li>
+
+      <li>
+        <a href="gioithieu.htm">Giới thiệu</a>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">Khóa học ▼</a>
+
+        <ul class="submenu">
+          <li>
+            <a href="#">Tin học căn bản</a>
+
+            <ul class="submenu-right">
+              <li>
+                <a href="word2010.htm"> Microsoft Word 2010 </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Tin học phổ thông</a>
+
+            <ul class="submenu-right">
+              <li>
+                <a href="excel2010.htm"> Microsoft Excel 2010 </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Lập trình Pascal</a>
+
+            <ul class="submenu-right">
+              <li>
+                <a href="powerpoint2010.htm"> Microsoft PowerPoint 2010 </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="laptrinhc.htm">Lập trình C</a>
+          </li>
+
+          <li>
+            <a href="thietkewebsite.htm"> Thiết kế website </a>
+          </li>
+
+          <li>
+            <a href="autocad.htm"> Vẽ kỹ thuật AutoCAD </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="baiviet.htm">Bài viết</a>
+      </li>
+
+      <li>
+        <a href="thuthuat.htm">Thủ thuật</a>
+      </li>
+    </ul>
+  </body>
+</html>
